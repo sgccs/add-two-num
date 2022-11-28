@@ -1,7 +1,8 @@
 import sys
 def input():return sys.stdin.readline().strip()
 def add(t):
-    return (int(input())+add(t-1))
+    while(t>0):
+        a,b=map(int,input().split())
+        print(a+b)
 t=int(input())
 add(t)
-
